@@ -6,7 +6,7 @@ export class CuboidComplex {
   cuboids = new Map<string, Cuboid>();
   vertices = new Map<string, boolean>();
   triangles: Array<Array<Point>> = [];
-  stl = "solid lalakis";
+  stl = "solid Civil";
   constructor(cuboids: Array<Cuboid>) {
     cuboids.forEach((cuboid) => {
       this.insert(cuboid);
@@ -80,6 +80,6 @@ endfacet`;
         }
       });
     });
-    this.stl += "endsolid lalakis";
+    this.stl += "endsolid Civil";
   }
 }
